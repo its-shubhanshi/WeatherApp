@@ -1,0 +1,140 @@
+*,
+::after,
+::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+  height: auto;
+}
+button {
+  cursor: pointer;
+}
+:disabled {
+  cursor: not-allowed;
+}
+iframe {
+  border: none;
+}
+
+@font-face {
+  font-family: mr;
+  src: url(../fonts/Montserrat-Regular.woff2);
+  font-display: swap;
+}
+@font-face {
+  font-family: mb;
+  src: url(../fonts/Montserrat-Bold.woff2);
+  font-display: swap;
+}
+@font-face {
+  font-family: msb;
+  src: url(../fonts/Montserrat-SemiBold.woff2);
+  font-display: swap;
+}
+body {
+  font: 16px mr, sans-serif;
+  background: url(../img/background.jpg) no-repeat center center/cover;
+}
+h1,
+h2,
+h3,
+h4,
+strong,
+b,
+th {
+  font-family: msb, sans-serif;
+}
+p {
+  font-family: mr, sans-serif;
+}
+.weatherApp {
+  margin: 0;
+  text-align: center;
+}
+.container {
+  max-width: 1200px;
+  height: 100vh;
+  padding: 0 15px;
+  color: #fff;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 -15px;
+}
+
+.row [class^="col"] {
+  flex: 1 1 auto;
+  padding: 0 15px;
+}
+.row .col-12 {
+  flex-basis: 100%;
+  max-width: 100%;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1 {
+  font: 40px msb, sans-serif;
+  color: red;
+  margin: 30px 0;
+}
+.weatherApp form {
+  margin: 50px 0;
+}
+.weatherApp input {
+  display: block;
+  width: 50%;
+  padding: 10px 20px;
+  border: 5px solid #05e527;
+  border-radius: 50px;
+  margin: auto;
+  font: 25px msb, sans-serif;
+  text-transform: capitalize;
+}
+.weatherApp input:focus {
+  outline: none;
+}
+.weatherApp button {
+  display: block;
+  margin: 30px auto;
+  color: #fff;
+  font: 25px mb, sans-serif;
+  font-weight: bold;
+  background: #ec1f1f;
+  padding: 10px 50px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+.weatherApp .error {
+  font: 25px msb, sans-serif;
+  letter-spacing: 1px;
+}
+
+.cityTitle {
+  font: 38px mb, sans-serif;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.cityTitle span {
+  color: #14e37b;
+}
+.weatherInfo p {
+  color: red;
+  font: 25px msb, sans-serif;
+  margin: 10px 0;
+}
+.weatherInfo p span {
+  color: yellow;
+}
+
